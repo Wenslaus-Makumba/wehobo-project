@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>home page </title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+<tr>
+<td><img src="profile2.jpg"width="200" height="140"></td>
+<td><p style="font-size:250%"><b> WEHOBO EVENT MANAGEMENT SYSTEM</b></p></td>
+<td><img src="profile1.jpg"width="200" height="140"></td>
+</tr>
+</table>
+</div>
+<div class="nav" id="menu" align="middle" >
+<table>
+<tr>
+<a href=admin.html><button>CLICK TO GO BACK</button></a>
+<a href=equipment_report.html><button>VIEW EQUIPMENT REPORT</button></a>
+</tr>
+</table>
+</div>
+<div class="main">
+<div class="admin">
+<table border="2" cellspacing="3" cellpadding="4" bgcolor="magetta" align="center" width="100%" class="tbright">
+<tr><td><a href="Messages.html"><button>MESSAGES</button></a></td></tr>
+<tr><td><a href="admin_equipment.html"><button>EQUIPMENT</button></a></td></tr>
+<tr><td><a href="admin_venue.html"><button>VENUE</button></a></td></tr>
+<tr><td><a href="admin_customer.html"><button>CUSTOMER</button></a></td></tr>
+<tr><td><a href="payment.html"><button>MAKE PAYMENT</button></a></td></tr>
+<tr><td><a href="admin_account.html"><button>ACCOUNT</button></a></td></tr>
+</table>
+</div> 
+<h1><center>WELCOME TO WEHOBO </center></h1>
+<center><a href="order.php"><input name="link" type="submit" value="CLICK TO GO BACK " id="send"></a></center>
+<form action="" method="post">
+<p><center><b>EQUIPMENT RESERVATION FORM</b></p>
+<center>
+<table>
+<tr><td>RESERVATION NO:</td><td><input type="number" name="eqid" min="1" required></td>
+<tr><td>EQUIPMENT NAME:</td><td><input type="text" name="eqname" required></td>
+<tr><td>CUSTOMER NAME:</td><td><input type="text" name="eqcname" required></td>
+<tr><td>NUMBER OF EQUIPMENTS:</td><td><input type="number" name="eqnname" min="1" required></td>
+<td>EQUIPMENT STATUS:</td><td><select  name="eqstatus" required>
+<option>---enter status--- 
+<option>BOOKED
+<option>AVAILABLE
+<option>NOT AVAILABLE</td></tr>
+<tr><td>START TIME:</td><td><input type="time" name="eqtime" required></td>
+<td>END TIME:</td><td><input type="time" name="eqtime2" required></td></tr>
+<tr><td>START DATE OF EVENT:</td><td><input type="date" name="eqdate"  required></td>
+<tr><td>END DATE OF EVENT:</td><td><input type="date" name="eqdate2"  required></td>
+</center>
+</table>
+<input type="submit" name="reserve" value="ADD">
+<input type="submit" name="delete" value="DELETE">
+<input type="submit" name="update" value="UPDATE">
+</form>
+<div class="footer">
+<marquee direction="left" scrollamount="10" width="100%" height="60">
+<font color="blue">WEHOBO EVENT MANAGEMENT SYSTEM</font>
+</marquee>
+</div>
+</div>
+</body>
+</html>
+
+
+

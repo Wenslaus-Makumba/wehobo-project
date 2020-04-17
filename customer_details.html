@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>admin customer form page </title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+<script language="javascript">
+function PrintMe(DivID) {
+var disp_setting="toolbar=yes,location=no,";
+disp_setting+="directories=yes,menubar=yes,";
+disp_setting+="scrollbars=yes,width=650, height=600, left=100, top=25";
+   var content_vlue = document.getElementById(DivID).innerHTML;
+   var docprint=window.open("","",disp_setting);
+   docprint.document.open();
+  
+   docprint.document.write('<head><title>WANDERJOY</title>');
+   docprint.document.write('</head><body onLoad="self.print()">');
+   docprint.document.write(content_vlue);
+   docprint.document.close();
+   docprint.focus();
+}
+</script>
+<style>.mainn{
+	background-color:grey;
+	width:40%;
+	height:30%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+<tr>
+<td><img src="profile2.jpg"width="200" height="140"></td>
+<td><p style="font-size:250%"><b>WEHOBO EVENT MANAGEMENT SYSTEM</b></p></td>
+<td><img src="profile1.jpg"width="200" height="140"></td>
+</tr>
+</table>
+</div>
+<div class="nav">
+<table>
+<tr>
+<td><a href="admin_customer.html"><input name="link" type="submit" value="CLICK TO GO BACK " id="send"></a></td>
+<td><input type="button"  name="btnprint" onClick="PrintMe('divid')" value="Print Details" style="font-weight:bold"></td>
+</tr>
+</table>
+</div>
+<div class="main">
+<div class="admin">
+<table border="2" cellspacing="3" cellpadding="4" bgcolor="magetta" align="center" width="100%" class="tbright">
+<tr><td><a href="Messages.php"><button>MESSAGES</button></a></td></tr>
+<tr><td><a href="admin_equipment.php"><button>EQUIPMENT</button></a></td></tr>
+<tr><td><a href="admin_venue.php"><button>VENUE</button></a></td></tr>
+<tr><td><a href="admin_customer.php"><button>CUSTOMER</button></a></td></tr>
+<tr><td><a href="admin_account.php"><button>ACCOUNT</button></a></td></tr>
+</table>
+</div>
+<h style="font-size:30px; color:black;"> CUSTOMER MANAGEMENT DETAILS</h><br><br>
+<div id="divid">
+echo"<table border=1>";
+echo"<tr><td>CUSTOMER ID</td><td>TELEPHONE NO</td><td>FIRST NAME</td><td>EMAIL</td><td>LAST NAME</td><td>PASSWORD</td><td>NATIONALITY</td><td>CONFIRM PASSWORD</td><td>RESIDENCE</td><td>OTHER INFORMATION</td></tr>"
+</div>
+</div>
+<div class="footer">
+<marquee direction="left" scrollamount="10" width="100%" height="60">
+<font color="blue">WEHOBO EVENT MANAGEMENT SYSTEM</font>
+</marquee>
+</div>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>home page </title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+<script language="javascript">
+function PrintMe(DivID) {
+var disp_setting="toolbar=yes,location=no,";
+disp_setting+="directories=yes,menubar=yes,";
+disp_setting+="scrollbars=yes,width=650, height=600, left=100, top=25";
+   var content_vlue = document.getElementById(DivID).innerHTML;
+   var docprint=window.open("","",disp_setting);
+   docprint.document.open();
+  
+   docprint.document.write('<head><title>WEHOBO</title>');
+   docprint.document.write('</head><body onLoad="self.print()">');
+   docprint.document.write(content_vlue);
+   docprint.document.close();
+   docprint.focus();
+}
+</script>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+<tr>
+<td><img src="profile2.jpg"width="200" height="140"></td>
+<td><p style="font-size:250%"><b> WEHOBO EVENT MANAGEMENT SYSTEM</b></p></td>
+<td><img src="profile1.jpg"width="200" height="140"></td>
+</tr>
+</table>
+</div>
+<div class="main">
+<center><a href="order.html"><input name="link" type="submit" value="CLICK TO GO BACK " id="send"></a></center>
+</div>
+<div class="footer">
+<marquee direction="left" scrollamount="10" width="100%" height="60">
+<font color="blue">WEHOBO EVENT MANAGEMENT SYSTEM</font>
+</marquee>
+</div>
+</body>
+</html>
+
+
+

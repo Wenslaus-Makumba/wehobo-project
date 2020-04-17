@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>home page </title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+<tr>
+<td><img src="profile2.jpg"width="200" height="140"></td>
+<td><p style="font-size:250%"><b>WEHOBO EVENT MANAGEMENT SYSTEM</b></p></td>
+<td><img src="profile1.jpg"width="200" height="140"></td>
+</tr>
+</table>
+</div>
+<div class="nav" id="menu" align="middle" >
+<table>
+<tr>
+<a href=index.html><button>HOME</button></a>
+<a href=regestration.html><button>REGISTER</button></a>
+<a href=login.html><button>RESERVATIONS</button></a>
+<a href=adminlogin.html><button>MANAGEMENT</button></a>
+<a href=about.html><button>ABOUT</button></a>
+<a href=contact.html><button>CONTACT US</button></a>
+</tr>
+</table>
+</div>
+<div class="main">
+<div class="admin">
+<table border="2" cellspacing="3" cellpadding="4" bgcolor="magetta" align="center" width="100%" class="tbright">
+<tr><td><a href="Messages.html"><button>MESSAGES</button></a></td></tr>
+<tr><td><a href="admin_reservation.html"><button>RESERVATION</button></a></td></tr>
+<tr><td><a href="admin_equipment.html"><button>EQUIPMENT</button></a></td></tr>
+<tr><td><a href="admin_venue.html"><button>VENUE</button></a></td></tr>
+<tr><td><a href="admin_event.html"><button>EVENT</button></a></td></tr>
+<tr><td><a href="admin_customer.html"><button>CUSTOMER</button></a></td></tr>
+<tr><td><a href="admin_account.html"><button>ACCOUNT</button></a></td></tr>
+</table>
+</div>
+<h1><center>WELCOME TO WEHOBO</center></h1>
+<center><a href="admin.html"><input name="link" type="submit" value="CLICK TO GO BACK " id="send"></a></center>
+<form>
+<center><p><b>EVENT RESERVATION FORM</b></p>
+<table>
+<tr><td>RESERVATION NO:</td><td><input type="number" name="vvid" min="1" required></td>
+<td>EVENT NO:</td><td><input type="number" name="vvno" min="1" required></td></tr>
+<tr><td>EVENT NAME:</td><td><input type="text" name="vvname" required></td>
+<td>EVENT STATUS:</td><td><select  name="vvstatus">
+<option>---enter status--- 
+<option>late
+<option>on time
+<option>canceled</td></tr>
+<tr><td>START TIME:</td><td><input type="time" name="vvtime" required></td>
+<td>END TIME:</td><td><input type="time" name="vvtime2" required></td></tr>
+<tr><td>DATE OF EVENT:</td><td><input type="date" name="vvdate" required></td>
+<td>EVENT DURATION IN HOURS:</td><td><input type="number" name="vvduration" min="1"required></td></tr>
+</center>
+</table>
+<input type="submit" name="reserve" value="RESERVATION">
+<input type="submit" name="delete" value="DELETE">
+<input type="submit" name="update" value="UPDATE">
+</form>
+<img src="image1.jpg">
+</div>
+<div class="footer">
+<font color="blue">WEHOBO EVENT MANAGENENT SYSTEM </font>
+</div>
+</div>
+</body>
+</html>
+
+
+

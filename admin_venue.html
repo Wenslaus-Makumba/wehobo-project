@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>venue reservation page </title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+<tr>
+<td><img src="profile2.jpg"width="200" height="140"></td>
+<td><p style="font-size:250%"><b> WEHOBO EVENT MANAGEMENT SYSTEM</b></p></td>
+<td><img src="profile1.jpg"width="200" height="140"></td>
+</tr>
+</table>
+</div>
+<div class="nav" id="menu" align="middle" >
+<table>
+<tr>
+<a href=admin.html><button>CLICK TO GO BACK</button></a>
+<a href=venue_report.html><button>VIEW VENUE REPORT</button></a>
+</tr>
+</table>
+</div>
+<div class="main">
+<div class="admin">
+<table border="2" cellspacing="3" cellpadding="1" bgcolor="magetta" align="center" width="100%" class="tbright">
+<tr><td><a href="Messages.html"><button>MESSAGES</button></a></td></tr>
+<tr><td><a href="admin_equipment.html"><button>EQUIPMENT</button></a></td></tr>
+<tr><td><a href="admin_venue.html"><button>VENUE</button></a></td></tr>
+<tr><td><a href="admin_customer.html"><button>CUSTOMER</button></a></td></tr>
+<tr><td><a href="payment.html"><button>MAKE PAYMENT</button></a></td></tr>
+<tr><td><a href="admin_account.html"><button>ACCOUNT</button></a></td></tr>
+</table>
+</div>
+<h1><center>WELCOME TO WEHOBO</center></h1>
+<form action="" method="post">
+<p><center><b>VENUE RESERVATION FORM</b></p>
+<table>
+<td>VENUE NO:</td><td><input type="number" name="vid" min="1" required></td></tr>
+<tr><td>VENUE NAME:</td><td><input type="text" name="vname" required></td>
+<tr><td>CUSTOMER NAME:</td><td><input type="text" name="vcname" required></td>
+<tr><td>VENUE SIZE:</td><td><input type="text" name="vsname" required></td>
+<td>VENUE STATUS:</td><td><select  name="vstatus" required>
+<option>---enter status--- 
+<option>BOOKED
+<option>AVAILABLE
+<option>NOT AVAILABLE</td></tr>
+<tr><td>START TIME:</td><td><input type="time" name="vtime" required></td>
+<td>END TIME:</td><td><input type="time" name="vtime2" required></td></tr>
+<tr><td>START DATE:</td><td><input type="date" name="vdate" required></td>
+<tr><td>END DATE:</td><td><input type="date" name="vdate2" required></td>
+</center>
+</table>
+<input type="submit" name="add" value="ADD">
+<input type="submit" name="delete" value="DELETE">
+<input type="submit" name="update" value="UPDATE">
+</form></center>
+<img src="image1.jpg">
+</div>
+<div class="footer">
+<font color="blue">WEHOBO EVENT MANAGEMENT SYSTEM</font>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>home page </title>
+<link rel="stylesheet" type="text/css" href="index.css" media="all">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+<tr>
+<td><img src="profile2.jpg"width="200" height="140"></td>
+<td><p style="font-size:250%"><b>WEHOBO EVENT MANAGEMENT SYSTEM</b></p></td>
+<td><img src="profile1.jpg"width="200" height="140"></td>
+</tr>
+</table>
+</div>
+<div class="main">
+<div class="nav">
+<table align="center">
+<tr>
+<a href=available_equipment.html><button>VIEW AVAILABLE EQUIPMENT</button></a>
+<a href=book_equipment.html><button>BOOK EQUIPMENT</button></a>
+<a href=cancel_equipment.html><button>CANCEL EQUIPMENT RESERVATION</button></a>
+<a href=find_equipment.html><button>GET RECEIPT</button></a>
+<a href=equipment_report2.html><button>VIEW EQUIPMENT DETAILS</button></a>
+<a href="order.php"><input name="link" type="submit" value="CLICK TO GO BACK " id="send"></a>
+</tr>
+</table>
+</div>
+<p><center><b>EQUIPMENT RESERVATION FORM</b></p>
+<form action="" method="post">
+<table>
+<tr><td>EQUIPMENT ID:</td><td
+</tr>
+<tr><td>CUSTOMER NAME:</td><td><input type="text" name="eqcname" required></td></tr>
+<tr><td>NUMBER OF EQUIPMENTS:</td><td><input type="number" name="eqnname" min="1" required></td>
+<td>EQ STATUS:</td><td><select  name="eqstatus" required>
+<option>BOOKED</td></tr>
+<tr><td>START TIME:</td><td><input type="time" name="eqtime" required></td>
+<td>END TIME:</td><td><input type="time" name="eqtime2" required></td></tr>
+<tr><td>START DATE:</td><td><input type="date" name="eqdate" required></td>
+<td>END DATE:</td><td><input type="date" name="eqdate2" required></td></tr>
+</center>
+</table>
+<input type="submit" name="update" value="BOOK">
+</form>
+<img src="image1.jpg">
+</div>
+</div>
+<div class="footer">
+<marquee direction="left" scrollamount="10" width="100%" height="60">
+<font color="black">WEHOBO EVENT MANAGEMENT SYSTEM</font>
+</marquee>
+</div>
+</div>
+</body>
+</html>
+
+
+
